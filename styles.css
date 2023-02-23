@@ -1,0 +1,171 @@
+@import url('reset.css');
+
+body {
+  font-family: Arial, 'Helvetica Neue', "Helvetica", sans-serif;
+  color: #fff;
+  background-color: #262c37;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.header_container,
+.main_container {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #262c37;
+  border-bottom: 1px solid #394252;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9375rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  min-height: 5rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #97af6e;
+  position: relative;
+  z-index: 5;
+}
+
+.disk {
+  font-size: 1.8rem;
+  color: red;
+}
+
+.bar {
+  color: gray;
+}
+
+.menu_body {
+  position: relative;
+  z-index: 5;
+}
+
+.menu_list {
+  display: flex;
+  align-items: center;
+  column-gap: 1.875rem;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+
+.menu_link {
+  font-size: 1.25rem;
+  color: #ffffffd4;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+}
+
+/*@media(max-width:797.98) {
+  .menu_body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+    background-color: #262c37;
+    padding: 6.25rem 0.9375rem 1.25rem 0.9375rem;
+    overflow: auto;
+    z-index: 1;
+  }
+
+
+  .menu_list {
+    flex-direction: column;
+    gap: 2.1875rem;
+  }
+
+  .menu_link {
+    font-size: 1.875rem;
+  }
+
+  .icon-menu {
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 1.875;
+    height: 1.125rem;
+  }
+
+  .icon-menu_line,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 0.125rem;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu_line {
+    top: calc(50%-0.0625rem);
+  }
+
+  .menu-open .icon-menu::before {
+    top: calc(50% - 0.0625rem);
+    transform: rotate(-45deg);
+  }
+
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 0.0625rem);
+    transform: rotate(45deg);
+  }
+
+  .menu-open .icon-menu_line {
+    left: 50%;
+    width: 0;
+  }
+}*/
+
+/*--------------*/
+.main {
+  padding-top: 6.25rem;
+  padding-bottom: 1.5625rem;
+}
+
+.main_container {
+  line-height: 1.5rem;
+  display: grid;
+  gap: 0.9375rem;
+}
+
+.main_title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #da6d24;
+  text-shadow: 2px 2px black;
+}
